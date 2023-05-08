@@ -6,4 +6,8 @@ duckdb:
       database: "{{ env_var('JAFFLE_DB_NAME', 'jaffle_shop') }}"
       schema: "{{ env_var('JAFFLE_TARGET_SCHEMA', 'analytics') }}"
       threads: 4
+      remote:
+        host: 127.0.0.1
+        port: 5433
+        user: dbt
   target: dev
