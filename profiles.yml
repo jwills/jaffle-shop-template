@@ -2,9 +2,7 @@ duckdb:
   outputs:
     dev:
       type: duckdb
-      path: "{{ env_var('JAFFLE_DB_PATH', './reports/jaffle_shop.duckdb') }}"
-      database: "{{ env_var('JAFFLE_DB_NAME', 'jaffle_shop') }}"
-      schema: "{{ env_var('JAFFLE_TARGET_SCHEMA', 'analytics') }}"
+      path: "{{ env_var('JAFFLE_DB_PATH', 'jaffle_shop.duckdb') }}"
       threads: 4
       remote:
         host: 127.0.0.1
