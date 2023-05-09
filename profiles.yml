@@ -3,6 +3,7 @@ duckdb:
     dev:
       type: duckdb
       path: "{{ env_var('JAFFLE_DB_PATH', 'jaffle_shop.duckdb') }}"
+      schema: analytics
       threads: 4
       remote:
         host: 127.0.0.1
